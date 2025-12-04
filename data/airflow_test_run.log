@@ -1,0 +1,19 @@
+[[34m2025-12-04T22:46:15.267+0600[0m] {[34mdagbag.py:[0m539} INFO[0m - Filling up the DagBag from /Users/nursultantolegen/projectdata/dags[0m
+[[34m2025-12-04T22:46:15.288+0600[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/Users/nursultantolegen/projectdata/.venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-12-04T22:46:15.288+0600[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-12-04T22:46:15.325+0600[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-12-04T22:46:15.523+0600[0m] {[34mdag.py:[0m3931} INFO[0m - dagrun id: yahoo_most_active_pipeline[0m
+[[34m2025-12-04T22:46:15.536+0600[0m] {[34mdag.py:[0m3947} INFO[0m - created dagrun <DagRun yahoo_most_active_pipeline @ 2025-12-04T00:00:00+00:00: manual__2025-12-04T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>[0m
+[[34m2025-12-04T22:46:15.539+0600[0m] {[34mdag.py:[0m3896} INFO[0m - *****************************************************[0m
+[[34m2025-12-04T22:46:15.539+0600[0m] {[34mdag.py:[0m3900} INFO[0m - Running task scrape[0m
+[2025-12-04 21:46:15,701] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='scrape' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'
+[[34m2025-12-04T22:46:15.701+0600[0m] {[34mtaskinstance.py:[0m1660} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='scrape' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'[0m
+[[34m2025-12-04T22:46:15.728+0600[0m] {[34mlogger.py:[0m11} INFO[0m - ====== WebDriver manager ======[0m
+[[34m2025-12-04T22:46:15.866+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Get LATEST chromedriver version for google-chrome[0m
+[[34m2025-12-04T22:46:16.239+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Get LATEST chromedriver version for google-chrome[0m
+[[34m2025-12-04T22:46:16.566+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Driver [/Users/nursultantolegen/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver] found in cache[0m
+[[34m2025-12-04T22:46:17.572+0600[0m] {[34mscraper.py:[0m68} INFO[0m - Navigating to https://finance.yahoo.com/most-active?offset=0&count=100[0m
