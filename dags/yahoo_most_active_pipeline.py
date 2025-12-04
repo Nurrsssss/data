@@ -75,3 +75,4 @@ with DAG(
         return message
 
     load_task(clean_task(scrape_task()))
+

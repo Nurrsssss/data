@@ -1,19 +1,54 @@
-[[34m2025-12-04T22:46:15.267+0600[0m] {[34mdagbag.py:[0m539} INFO[0m - Filling up the DagBag from /Users/nursultantolegen/projectdata/dags[0m
-[[34m2025-12-04T22:46:15.288+0600[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+[[34m2025-12-04T23:35:07.747+0600[0m] {[34mdagbag.py:[0m539} INFO[0m - Filling up the DagBag from /Users/nursultantolegen/projectdata/dags[0m
+[[34m2025-12-04T23:35:07.776+0600[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
 Traceback (most recent call last):
   File "/Users/nursultantolegen/projectdata/.venv/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
     from kubernetes.client import models as k8s
 ModuleNotFoundError: No module named 'kubernetes'
-[[34m2025-12-04T22:46:15.288+0600[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
-[[34m2025-12-04T22:46:15.325+0600[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
-[[34m2025-12-04T22:46:15.523+0600[0m] {[34mdag.py:[0m3931} INFO[0m - dagrun id: yahoo_most_active_pipeline[0m
-[[34m2025-12-04T22:46:15.536+0600[0m] {[34mdag.py:[0m3947} INFO[0m - created dagrun <DagRun yahoo_most_active_pipeline @ 2025-12-04T00:00:00+00:00: manual__2025-12-04T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>[0m
-[[34m2025-12-04T22:46:15.539+0600[0m] {[34mdag.py:[0m3896} INFO[0m - *****************************************************[0m
-[[34m2025-12-04T22:46:15.539+0600[0m] {[34mdag.py:[0m3900} INFO[0m - Running task scrape[0m
-[2025-12-04 21:46:15,701] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='scrape' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'
-[[34m2025-12-04T22:46:15.701+0600[0m] {[34mtaskinstance.py:[0m1660} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='scrape' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'[0m
-[[34m2025-12-04T22:46:15.728+0600[0m] {[34mlogger.py:[0m11} INFO[0m - ====== WebDriver manager ======[0m
-[[34m2025-12-04T22:46:15.866+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Get LATEST chromedriver version for google-chrome[0m
-[[34m2025-12-04T22:46:16.239+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Get LATEST chromedriver version for google-chrome[0m
-[[34m2025-12-04T22:46:16.566+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Driver [/Users/nursultantolegen/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver] found in cache[0m
-[[34m2025-12-04T22:46:17.572+0600[0m] {[34mscraper.py:[0m68} INFO[0m - Navigating to https://finance.yahoo.com/most-active?offset=0&count=100[0m
+[[34m2025-12-04T23:35:07.776+0600[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-12-04T23:35:07.826+0600[0m] {[34mexample_kubernetes_executor.py:[0m38} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-12-04T23:35:08.075+0600[0m] {[34mdag.py:[0m3931} INFO[0m - dagrun id: yahoo_most_active_pipeline[0m
+[[34m2025-12-04T23:35:08.095+0600[0m] {[34mdag.py:[0m3947} INFO[0m - created dagrun <DagRun yahoo_most_active_pipeline @ 2025-12-04T00:00:00+00:00: manual__2025-12-04T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>[0m
+[[34m2025-12-04T23:35:08.101+0600[0m] {[34mdag.py:[0m3896} INFO[0m - *****************************************************[0m
+[[34m2025-12-04T23:35:08.101+0600[0m] {[34mdag.py:[0m3900} INFO[0m - Running task scrape[0m
+[2025-12-04 22:35:08,208] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='scrape' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'
+[[34m2025-12-04T23:35:08.208+0600[0m] {[34mtaskinstance.py:[0m1660} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='scrape' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'[0m
+[[34m2025-12-04T23:35:08.527+0600[0m] {[34mlogger.py:[0m11} INFO[0m - ====== WebDriver manager ======[0m
+[[34m2025-12-04T23:35:08.844+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Get LATEST chromedriver version for google-chrome[0m
+[[34m2025-12-04T23:35:09.187+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Get LATEST chromedriver version for google-chrome[0m
+[[34m2025-12-04T23:35:09.527+0600[0m] {[34mlogger.py:[0m11} INFO[0m - Driver [/Users/nursultantolegen/.wdm/drivers/chromedriver/mac64/142.0.7444.175/chromedriver-mac-arm64/chromedriver] found in cache[0m
+[[34m2025-12-04T23:35:10.542+0600[0m] {[34mscraper.py:[0m68} INFO[0m - Navigating to https://finance.yahoo.com/most-active?offset=0&count=100[0m
+[[34m2025-12-04T23:35:56.315+0600[0m] {[34mscraper.py:[0m74} INFO[0m - Most active table detected, starting scroll loop.[0m
+[[34m2025-12-04T23:36:04.615+0600[0m] {[34mscraper.py:[0m76} INFO[0m - Scraped 100 rows from Yahoo Finance.[0m
+[[34m2025-12-04T23:36:04.725+0600[0m] {[34myahoo_most_active_pipeline.py:[0m46} INFO[0m - Scrape task captured 100 rows.[0m
+[2025-12-04 22:36:04,726] {python.py:194} INFO - Done. Returned value was: /Users/nursultantolegen/projectdata/data/raw_most_active.json
+[[34m2025-12-04T23:36:04.726+0600[0m] {[34mpython.py:[0m194} INFO[0m - Done. Returned value was: /Users/nursultantolegen/projectdata/data/raw_most_active.json[0m
+[2025-12-04 22:36:04,739] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=yahoo_most_active_pipeline, task_id=scrape, execution_date=20251204T000000, start_date=, end_date=20251204T173604
+[[34m2025-12-04T23:36:04.739+0600[0m] {[34mtaskinstance.py:[0m1398} INFO[0m - Marking task as SUCCESS. dag_id=yahoo_most_active_pipeline, task_id=scrape, execution_date=20251204T000000, start_date=, end_date=20251204T173604[0m
+[[34m2025-12-04T23:36:04.747+0600[0m] {[34mdag.py:[0m3904} INFO[0m - scrape ran successfully![0m
+[[34m2025-12-04T23:36:04.747+0600[0m] {[34mdag.py:[0m3907} INFO[0m - *****************************************************[0m
+[[34m2025-12-04T23:36:04.750+0600[0m] {[34mdag.py:[0m3896} INFO[0m - *****************************************************[0m
+[[34m2025-12-04T23:36:04.750+0600[0m] {[34mdag.py:[0m3900} INFO[0m - Running task clean[0m
+[2025-12-04 22:36:04,767] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='clean' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'
+[[34m2025-12-04T23:36:04.767+0600[0m] {[34mtaskinstance.py:[0m1660} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='clean' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'[0m
+[[34m2025-12-04T23:36:04.784+0600[0m] {[34mcleaner.py:[0m98} INFO[0m - Cleaned dataset rows: 100[0m
+[[34m2025-12-04T23:36:04.786+0600[0m] {[34myahoo_most_active_pipeline.py:[0m59} INFO[0m - Clean task produced 100 rows.[0m
+[2025-12-04 22:36:04,788] {python.py:194} INFO - Done. Returned value was: /Users/nursultantolegen/projectdata/data/clean_most_active.json
+[[34m2025-12-04T23:36:04.788+0600[0m] {[34mpython.py:[0m194} INFO[0m - Done. Returned value was: /Users/nursultantolegen/projectdata/data/clean_most_active.json[0m
+[2025-12-04 22:36:04,795] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=yahoo_most_active_pipeline, task_id=clean, execution_date=20251204T000000, start_date=, end_date=20251204T173604
+[[34m2025-12-04T23:36:04.795+0600[0m] {[34mtaskinstance.py:[0m1398} INFO[0m - Marking task as SUCCESS. dag_id=yahoo_most_active_pipeline, task_id=clean, execution_date=20251204T000000, start_date=, end_date=20251204T173604[0m
+[[34m2025-12-04T23:36:04.798+0600[0m] {[34mdag.py:[0m3904} INFO[0m - clean ran successfully![0m
+[[34m2025-12-04T23:36:04.798+0600[0m] {[34mdag.py:[0m3907} INFO[0m - *****************************************************[0m
+[[34m2025-12-04T23:36:04.800+0600[0m] {[34mdag.py:[0m3896} INFO[0m - *****************************************************[0m
+[[34m2025-12-04T23:36:04.800+0600[0m] {[34mdag.py:[0m3900} INFO[0m - Running task load[0m
+[2025-12-04 22:36:04,815] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'
+[[34m2025-12-04T23:36:04.815+0600[0m] {[34mtaskinstance.py:[0m1660} INFO[0m - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-engineering' AIRFLOW_CTX_DAG_ID='yahoo_most_active_pipeline' AIRFLOW_CTX_TASK_ID='load' AIRFLOW_CTX_EXECUTION_DATE='2025-12-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-04T00:00:00+00:00'[0m
+[[34m2025-12-04T23:36:04.818+0600[0m] {[34mloader.py:[0m66} INFO[0m - Inserted 100 rows into /Users/nursultantolegen/projectdata/data/output.db.[0m
+[[34m2025-12-04T23:36:04.818+0600[0m] {[34myahoo_most_active_pipeline.py:[0m74} INFO[0m - Inserted 100 rows.[0m
+[2025-12-04 22:36:04,818] {python.py:194} INFO - Done. Returned value was: Inserted 100 rows.
+[[34m2025-12-04T23:36:04.818+0600[0m] {[34mpython.py:[0m194} INFO[0m - Done. Returned value was: Inserted 100 rows.[0m
+[2025-12-04 22:36:04,824] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=yahoo_most_active_pipeline, task_id=load, execution_date=20251204T000000, start_date=, end_date=20251204T173604
+[[34m2025-12-04T23:36:04.824+0600[0m] {[34mtaskinstance.py:[0m1398} INFO[0m - Marking task as SUCCESS. dag_id=yahoo_most_active_pipeline, task_id=load, execution_date=20251204T000000, start_date=, end_date=20251204T173604[0m
+[[34m2025-12-04T23:36:04.829+0600[0m] {[34mdag.py:[0m3904} INFO[0m - load ran successfully![0m
+[[34m2025-12-04T23:36:04.829+0600[0m] {[34mdag.py:[0m3907} INFO[0m - *****************************************************[0m
+[[34m2025-12-04T23:36:04.831+0600[0m] {[34mdagrun.py:[0m653} INFO[0m - Marking run <DagRun yahoo_most_active_pipeline @ 2025-12-04T00:00:00+00:00: manual__2025-12-04T00:00:00+00:00, state:running, queued_at: None. externally triggered: False> successful[0m
+[[34m2025-12-04T23:36:04.831+0600[0m] {[34mdagrun.py:[0m704} INFO[0m - DagRun Finished: dag_id=yahoo_most_active_pipeline, execution_date=2025-12-04T00:00:00+00:00, run_id=manual__2025-12-04T00:00:00+00:00, run_start_date=2025-12-04T00:00:00+00:00, run_end_date=2025-12-04 17:36:04.831786+00:00, run_duration=63364.831786, state=success, external_trigger=False, run_type=manual, data_interval_start=2025-12-03T00:00:00+00:00, data_interval_end=2025-12-04T00:00:00+00:00, dag_hash=None[0m
